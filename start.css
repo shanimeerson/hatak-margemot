@@ -1,0 +1,411 @@
+body,
+html {
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url('assets/media/part1/background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "heebo";
+    user-select: none;
+    overflow: Hidden;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+@font-face {
+    font-family: "heebo";
+    src: url("assets/fonts/Heebo-VariableFont_wght.ttf");
+}
+
+#infront {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    top: 9vh;
+    right: 12vw;
+}
+
+#title,
+#title3 {
+    color: white;
+    font-size: 12vh;
+    font-weight: 400;
+    margin: 0;
+}
+#title3 {
+    position: absolute;
+    text-align: center;
+    top: 15vh;
+    right: 35vw;
+    font-size: 6vh;
+    font-weight: 600;
+}
+
+#layer {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 104%;
+    z-index: 1;
+    visibility: visible;
+}
+
+@keyframes higherOpacity {
+    from {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    to {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes moveText {
+    from {
+        right: 23vw;
+        top: 30vh;
+    }
+
+    to {
+        right: 12vw;
+        top: 9vh;
+
+    }
+}
+
+/* @keyframes bigSmall {
+    from {
+        width: 15vw;
+        height: 20vh;
+    }
+
+    to {
+        width: 18.75vw;
+        height: 25vh;
+        right: 5vh;
+    
+    }
+} */
+
+@keyframes changeFontSize {
+    from {
+        font-size: 23vh;
+    }
+
+    to {
+        font-size: 4vh
+    }
+}
+
+/* after animations */
+#afterAnimations {
+    position: relative;
+    visibility: hidden;
+    z-index: 2;
+    color: white;
+}
+
+.subject{
+    width: 15vw;
+    height: 20vh;
+    position: absolute;
+}
+
+.subject:hover {
+    cursor: pointer;
+   
+}
+
+
+
+
+
+
+.item {
+    /* display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    margin: 2vw;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder; */
+    background-image: url(assets/media/part1/backBtn/tzalim.png);
+    height: 5vh;
+    width:3vw;
+    position: absolute;
+    bottom: 2vh;
+    right: 2vw;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-image: url(assets/media/part1/backBtn/tzalim.gif);
+}
+
+#basesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    height: 45vh;
+    width: 66vw;
+    justify-content: center;
+    position: absolute;
+    top: 24vh;
+    right: 17vw;
+    margin: 2vw;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 81vw;
+}
+img {
+    height: 21vh;
+    width: 14vw;
+}
+
+.nextPage {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1vh 2vw;
+    border-radius: 10px;
+    position: relative;
+    bottom: -92vh;
+    right: -2vw;
+}
+
+.nextPage:hover {
+    cursor: pointer;
+}
+
+/*showInfo*/
+#showInfo {
+    position: relative;
+    visibility: hidden;
+    z-index: 2;
+}
+
+#symbol {
+    width: 14vw;
+    height: 20vh;
+    position: absolute;
+}
+
+.baseName {
+    color: white;
+    font-size: 12vh;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+#backBtn{
+    height: 9vh;
+    width: 7vw;
+}
+
+#backBtnSection {
+    position: relative;
+    right: -43vw;
+    top: 67vh;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+
+#backBtnSection:hover {
+    cursor: pointer;
+}
+
+#toMainScreen {
+    position: relative;
+    right: 0vw;
+}
+
+.info {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    height: 67vh;
+    width: 66vw;
+    position: absolute;
+    top: 24vh;
+    right: 16vw;
+    text-align: center;
+    font-size: 2vw;
+    color: black;
+}
+
+#text {
+    margin: 2vw;
+}
+
+#learnMoreBtn {
+    right: -77vw;
+}
+
+#instructionsPage {
+    position: relative;
+    visibility: hidden;
+    z-index: 2;
+}
+
+#instructions {
+    position: relative;
+    top: -12vh;
+    right: -15vw;
+}
+
+/* subj4 */
+.commands{
+    font-weight: 600;
+    color:#4b5d71;
+    font-size: 42px;
+    position: absolute;
+    z-index: 2;
+}
+.commands:hover{
+    cursor: pointer;
+}
+
+.hidden{
+    font-weight: 400;
+    color:#c72929;
+    font-size: 22px;
+    position: absolute;
+    z-index: 2;
+}
+
+#txt4{
+    border: 2px solid #c72929;
+    border-radius: 50px;
+    height: 22vh;
+    width: 15vw;
+    position: absolute;
+    top: 62vh;
+    right: 42vw;
+    text-align: center;
+    font-size: 24px;
+    color: #4b5d71;
+    z-index: 2;
+    font-weight: 700;
+
+}
+
+.txt5{
+    height: 22vh;
+    width: 19vw;
+    text-align: center;
+    font-size: 30px;
+    color: #4b5d71;
+    z-index: 2;
+    font-weight: 470; 
+}
+
+.txt5H{
+    height: 22vh;
+    width: 15vw;
+    text-align: center;
+    font-size: 181px;
+    color: #263647;
+    z-index: 2;
+    font-weight: 550;
+}
+
+.arrow{
+    position: absolute;
+    font-size: 10vh;
+}
+
+#InfoPlacement,
+#InfoPlacement2{
+    position: absolute;
+    left: 27vw;
+    top: 45vh;
+    font-size: 5vh;
+    font-weight: 500;
+    width: 46vw;
+    height: 7vh;
+    text-align: center;
+}
+#num,
+#num2{
+    position: absolute;
+    left: 46vw;
+    top: 27vh;
+    font-size: 11vh;
+    font-weight: 500;
+    border: 5px dotted #8c6e60;
+    border-radius: 50%;
+    height: 16vh;
+    width: 7vw;
+    text-align: center;
+}
+
+.txt6{
+    position: absolute;
+    left: 27vw;
+    top: 27vh;
+    font-size: 4vh;
+    font-weight: 500;
+    width: 50vw;
+    height: 4vh;
+    text-align: center;
+}
+
+#speechBubble
+,#speechBubble2{
+    width: 32vw;
+    height: 43vh;
+    top: 37vh;
+    left: 24vw;
+    position: absolute;
+    rotate: -13deg;
+    z-index: 2;
+}
+
+#solider
+,#solider2{
+    right: 42vh;
+    position: absolute;
+    top: 47vh;
+    height: 40vh;
+    width: 18vw;
+}
+
+#next:hover,
+#next2:hover{
+    cursor: pointer;
+}
+
+
+
+.pink{
+    border: 4px solid pink;
+    border-radius: 36px;
+}
+
+#examBtn:hover{
+    cursor: pointer;
+}
+
+#next3:hover{
+    cursor: pointer;
+}
